@@ -201,19 +201,19 @@ function draw() {
       //database.ref('four').set({PLACE:pl3})
       //database.ref("five").set({ NAME: pl4n, PLACE: pl4 })
       //database.ref('five').set({PLACE:pl4})
-      ne.html("YOU : "+score)
+      ne.html(pl1n + " : " + pl1)
       ne.style('color:white');
       ne.position(width / 2 - 100, 120)
-      tw.html(pl1n + " : " + pl1)
+      tw.html(pl2n + " : " + pl2)
       tw.style('color:silver');
       tw.position(width / 2 - 100, 160)
-      th.html(pl2n +" : "+pl2)
+      th.html(pl3n + " : " + pl3)
       th.style('color:brown');
       th.position(width / 2 - 100, 200)
-      fo.html(pl3n + " : " + pl3)
+      fo.html(pl4n + " : " + pl4)
       fo.style('color:black');
       fo.position(width / 2 - 100, 240)
-      fi.html(pl4n + " : " + pl4)
+      fi.html(pl5n + " : " + pl5)
       fi.style('color:black');
       fi.position(width / 2 - 100, 280)
       leading=1
@@ -236,16 +236,16 @@ function draw() {
       ne.html(pl1n + " : " + pl1)
       ne.style('color:gold');
       ne.position(width / 2 - 100, 120)
-      tw.html("YOU : "+score)
+      tw.html(pl2n + " : " + pl2)
       tw.style('color:white');
       tw.position(width / 2 - 100, 160)
-      th.html(pl2n +" : "+pl2)
+      th.html(pl3n + " : " + pl3)
       th.style('color:brown');
       th.position(width / 2 - 100, 200)
-      fo.html(pl3n + " : " + pl3)
+      fo.html(pl4n + " : " + pl4)
       fo.style('color:black');
       fo.position(width / 2 - 100, 240)
-      fi.html(pl4n + " : " + pl4)
+      fi.html(pl5n + " : " + pl5)
       fi.style('color:black');
       fi.position(width / 2 - 100, 280)
       leading=1
@@ -267,13 +267,13 @@ function draw() {
       tw.html(pl2n + " : " + pl2)
       tw.style('color:silver');
       tw.position(width / 2 - 100, 160)
-      th.html("YOU : "+ score)
+      th.html(pl3n + " : " + pl3)
       th.style('color:white');
       th.position(width / 2 - 100, 200)
-      fo.html(pl3n + " : " + pl3)
+      fo.html(pl4n + " : " + pl4)
       fo.style('color:black');
       fo.position(width / 2 - 100, 240)
-      fi.html(pl4n + " : " + pl4)
+      fi.html(pl5n + " : " + pl5)
       fi.style('color:black');
       fi.position(width / 2 - 100, 280)
       leading=1
@@ -295,10 +295,10 @@ function draw() {
       th.html(pl3n + " : " + pl3)
       th.style('color:brown');
       th.position(width / 2 - 100, 200)
-      fo.html("YOU : "+score)
+      fo.html(pl4n + " : " + pl4)
       fo.style('color:white');
       fo.position(width / 2 - 100, 240)
-      fi.html(pl4n + " : " + pl4)
+      fi.html(pl5n + " : " + pl5)
       fi.style('color:black');
       fi.position(width / 2 - 100, 280)
       leading=1
@@ -308,7 +308,7 @@ function draw() {
       database.ref("/").update({
         five:{ NAME: scorename, PLACE: score }
       })
-      ne.html(pl1n + ":" + pl1)
+      ne.html(pl1n + " : " + pl1)
       ne.style('color:gold');
       ne.position(width / 2 - 100, 120)
       tw.html(pl2n + " : " + pl2)
@@ -320,7 +320,7 @@ function draw() {
       fo.html(pl4n + " : " + pl4)
       fo.style('color:black');
       fo.position(width / 2 - 100, 240)
-      fi.html("YOU : " + score)
+      fi.html(pl5n + " : " + pl5)
       fi.style('color:white');
       fi.position(width / 2 - 100, 280)
       leading=1
