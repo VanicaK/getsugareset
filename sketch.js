@@ -440,9 +440,11 @@ function handleDefeat(bullet, aizen) {
     aizLife -= 1
   }
   else if (aizLife === 1) {
+    aizLife-=1
     score += 10
     bullet.destroy()
     explode(aizen.x, aizen.y)
+    
   }
 }
 
@@ -476,7 +478,11 @@ function keyPressed() {
   }
   if (keyCode === 13) {
     if (gameState == 2) {
-      scorename = username.value()
+      if(username.value.length<=25){
+        scorename = username.value()
+      }else{
+        scorename="useless neek"
+      }
       username.hide()
       gameState = 3
     }
