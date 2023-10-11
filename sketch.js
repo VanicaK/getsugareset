@@ -9,6 +9,7 @@ var redBubbleGroup, blueBubbleGroup, bulletGroup;
 var magSize = 10;
 var reloading = false;
 var database
+var val="???"
 
 var life = 3;
 var score = 0;
@@ -174,7 +175,7 @@ function draw() {
       pl5 = data.five.PLACE
       pl5n = data.five.NAME
 
-
+    
 
     })
     //console.log(pl1.PLACE)
@@ -186,11 +187,11 @@ function draw() {
     //console.log(pl1n)
     
     database.ref("/").update({
-      one:{ NAME: "NONE", PLACE: "NONE" },
-      two:{ NAME: "NONE", PLACE: "NONE" },
-      three:{ NAME: "NONE", PLACE: "NONE" },
-      four:{ NAME: "NONE", PLACE: "NONE"},
-      five:{ NAME: "NONE", PLACE: "NONE" }
+      one:{ NAME: val, PLACE: val },
+      two:{ NAME: val, PLACE: val },
+      three:{ NAME: val, PLACE: val },
+      four:{ NAME: val, PLACE: val},
+      five:{ NAME: val, PLACE: val }
     })
       
   }
