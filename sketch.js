@@ -187,11 +187,11 @@ function draw() {
     //console.log(pl1n)
     
     database.ref("/").update({
-      one:{ NAME: val, PLACE: val },
-      two:{ NAME: val, PLACE: val },
-      three:{ NAME: val, PLACE: val },
-      four:{ NAME: val, PLACE: val},
-      five:{ NAME: val, PLACE: val }
+      one:{ NAME: val, PLACE: 5 },
+      two:{ NAME: val, PLACE: 4 },
+      three:{ NAME: val, PLACE: 3 },
+      four:{ NAME: val, PLACE: 2},
+      five:{ NAME: val, PLACE: 1 }
     })
       
   }
